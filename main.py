@@ -10,8 +10,10 @@ def clear():
 def main():
     Exposition()
     Character_Creation()
+    ACT_1()
 
 def Menu():
+    clear()
     print("Point Neo")
     print("Play")
     print("Settings")
@@ -56,9 +58,51 @@ def Exposition():
 def Character_Creation():
     clear()
     player.char_name = input("Input Character name: ")
-    delay_print("Choose a class: ")
-    print("B")
-    delay_print("(input class to see more options ")
+    while True:
+        clear()
+        delay_print("Choose a class: \n")
+        print("Kernal")
+        print("NetScaper")
+        print("Slasher")
+        class_input = input("input class name to see more options: ").lower()
+        if class_input == "kernal":
+            clear()
+            delay_print("A Kernal is a combat specialist\n")
+            delay_print("specilized in guns and CQB\n")
+            i = input("choose Kernal? y/n: ").lower()
+            if i == "y":
+                player.char_class = "kernal"
+                break
+            else:
+                pass
+        elif class_input == "netscaper":
+            clear()
+            delay_print("A NetScaper specializes in hacking\n")
+            delay_print("using any and all tech to their advantage\n")
+            i = input("choose NetScaper? y/n: ").lower()
+            if i == "y":
+                player.char_class = "NetScaper"
+                break
+            else:
+                pass
+        elif class_input == "slasher":
+            clear()
+            delay_print("A slasher specializes in melee comabt\n")
+            delay_print("adept in slashing weapons most of all\n")
+            i = input("choose Slasher? y/n: ").lower()
+            if i == "y":
+                player.char_class = "Slasher"
+                break
+            else:
+                pass
+
+def ACT_1():
+    clear()
+    delay_print("some more exposition or something")
+
+
+
+
 
 
 
