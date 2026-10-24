@@ -153,12 +153,52 @@ __________\     \               //\::/\:/___  ___ /       /::\ \:\ \::/\:\ \:\
     """)
     delay_print("#### POINT NEO ####\n")
     input("press any button to continue...")
-    clear()
-    delay_print("")
+    while True:
+        clear()
+        delay_print("You awaken in a faintly lit alleyway, No clue how you got here, and you feel like throwing up...\n")
+        print("#################################################")
+        choice1 = input("What do you do?:  ").lower()
+        if choice1 == "look around" or "look":
+            clear()
+            delay_print("""
+The alleyway is dark, only lit by neon signs far above in the canopy of buildings and walkways,
+there are also piles of garbage, one pile you are laying in.
+there is a shop far down the way, but you cant make out what the sign says\n""")
+            input("Press any button to continue...")
+        elif choice1 == "throw up" or "try and throw up" or "try to throw up":
+            clear()
+            delay_print("Your stomach convulses trying to get whatever did this out of you, but as hard as you try you cant throw up.\n")
+            input("Press any button to continue...")
+        elif choice1 == "walk down alley" or "walk down the alley" or "walk":
+            clear()
+            delay_print("you walk down the alleyway, garbage and cans crunching under your feet\n")
+            delay_print("you pass no forms of life on the slow walk over, no racoons digging in garbage\n")
+            delay_print("its almost uncanny not seeing any form of life in this huge city...\n")
+            input("press any button to continue")
+            break
+        else:
+            clear()
+            delay_print("unknown input try again\n")
+            input("press any button to continue")
 
-
-
-
+    while True:
+        clear()
+        delay_print("you come towards the store")
+        delay_print("The sign says its a Med-Vac")
+        print("#################################################")
+        choice2 = input("What do you do?:  ").lower()
+        if choice2 == "look around" or "look":
+            clear()
+            delay_print("the outside of the Med-Vac has plenty of posters pastered along the walls\n")
+            delay_print("posters for new bio-tech pormising to make the body and mind stronger and better\n")
+            input("Press any button to continue...")
+        elif choice2 == "go inside" or "go in":
+            clear()
+            delay_print("hehe hi")
+        else:
+            clear()
+            delay_print("unknown input try again\n")
+            input("press any button to continue")
 
 
 
